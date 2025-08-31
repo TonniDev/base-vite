@@ -3,16 +3,16 @@
 import { useEffect, useState } from "react";
 
 function ThemeSwitcher() {
-  const storedTheme = window.localStorage.getItem("prefered-theme");
+  const storedTheme = window.localStorage.getItem("preferred-theme");
   const checkTheme = () => storedTheme !== "darkTheme";
   const [isLight, setIsLight] = useState(checkTheme);
   function setLightTheme() {
     setIsLight(true);
-    window.localStorage.setItem("prefered-theme", "lightTheme");
+    window.localStorage.setItem("preferred-theme", "lightTheme");
   }
   function setDarkTheme() {
     setIsLight(false);
-    window.localStorage.setItem("prefered-theme", "darkTheme");
+    window.localStorage.setItem("preferred-theme", "darkTheme");
   }
   useEffect(() => {
     const setTheme = () => {
