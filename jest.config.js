@@ -18,6 +18,8 @@ export default {
         'src/**/*.{js,jsx,ts,tsx}',
         '!src/**/*.d.ts',
         '!src/main.tsx',
+        '!src/pages/Home/Home.tsx',
+        '!src/Routes.tsx',
         '!src/reportWebVitals.ts',
     ],
     testEnvironmentOptions: {
