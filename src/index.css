@@ -1,10 +1,35 @@
-@tailwind base;
-@tailwind components;
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
 @tailwind utilities;
+/*@custom-variant dark (&:where(.dark, .dark *));*/
+
+:root {
+    --font-geist-sans: "Geist", sans-serif;
+    --font-geist-mono: "Geist", monospace;
+}
+
+html,
+body {
+    font-family: Geist, Arial, Helvetica, sans-serif;
+    font-size: var(--font-size);
+}
+
+@theme {
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --font-size: 16px;
+    --background-light: #faf8ef;
+    --color-light: #effaf1;
+    --color-dark: #242624;
+}
 
 /* Custom styles can be added here if needed */
 
-#root {
+/*#root {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
@@ -45,5 +70,5 @@
 
 .read-the-docs {
     color: #888;
-}
+}*/
 
