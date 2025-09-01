@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import reactLogo from '../../assets/react.svg';
+import reactLogo from '@/assets/react.svg';
 import viteLogo from '/vite.svg';
-import ThemeSwitcher from "../../lib/ui/ThemeSwitcher.tsx";
+import ThemeSwitcher from "@ui/ThemeSwitcher/ThemeSwitcher.tsx";
 
 export const Home = () => {
 
